@@ -1,0 +1,37 @@
+[
+ {
+  "cislo": "1",
+  "nazev": "Nezávazně se sejdeme",
+  "popis": "Na první schůzce si uděláme základní představu o stavu nemovitosti a okolnostech prodeje."
+ },
+ {
+  "cislo": "2",
+  "nazev": "Naceníme vaši nemovitost",
+  "popis": "Cenu stanovíme podle stavu, právních náležitostí a situace na trhu, aby šlo o nejvyšší cenu, která je pořád reálná."
+ },
+ {
+  "cislo": "3",
+  "nazev": "Natočíme videoprohlídku",
+  "popis": "Kvalitní video několikanásobně zvýší návštěvnost inzerátu. Zájemce si nemovitost prohlédne i bez osobní návštěvy."
+ },
+ {
+  "cislo": "4",
+  "nazev": "Připravíme inzerci",
+  "popis": "Inzerát s videoprohlídkou vystavíme na inzertních portálech i sociálních sítích a oslovíme naši databázi klientů."
+ },
+ {
+  "cislo": "5",
+  "nazev": "Komunikujeme se zájemci",
+  "popis": "Shromažďování zájemců a sjednávání schůzek je nejnáročnější část prodeje. Převezmeme ji za vás."
+ },
+ {
+  "cislo": "6",
+  "nazev": "Realizujeme prohlídky",
+  "popis": "S vážnými zájemci se scházíme přímo v nemovitosti, upozorníme na její přednosti a zvládneme i právní otázky."
+ },
+ {
+  "cislo": "7",
+  "nazev": "Zprostředkujeme financování",
+  "popis": "Kupujícímu zdarma najdeme vhodné financování, hypotéku s výhodnou sazbou včetně jednání s bankou."
+ }
+]

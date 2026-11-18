@@ -1,0 +1,101 @@
+{% extends "_base.html" %}
+{% set titulek = 'Reality jinak – prodáváme nemovitosti jinak | Brno, Praha, celá ČR' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+    <p class="kicker">Realitní kancelář · Brno a Praha · od roku 2011</p>
+    <h1>Prodáváme nemovitosti <span class="cedule"><span class="jinak">jinak</span></span></h1>
+    <p class="lead">Videoprohlídky, 3D scan a profesionální fotky přivedou k vaší nemovitosti ty správné zájemce. Rychle a za nejvyšší cenu, která je pořád reálná.</p>
+    <div class="cta">
+      <a class="btn" href="#kontakt">Nezávazná schůzka</a>
+      <a class="btn btn-line" href="#nabidka">Aktuální nabídka</a>
+    </div>
+    </div>
+    <div class="hero-foto hledacek">{{ img('nem1491.jpg', 'Prodej rodinného domu 5+kk v nabídce Reality jinak', sizes='(min-width: 60rem) 34rem, 90vw', eager=True) }}<span class="stav">V nabídce</span></div>
+  </div>
+  <div class="wrap hero-dole">
+    <p><strong>Mgr. Ivo Rábl</strong>, jednatel<br>Člen Realitní komory ČR</p>
+    <p><strong>Zdarma pro klienty</strong><br>právní servis, hypotéka pro kupující, nacenění</p>
+  </div>
+</section>
+
+<section class="sekce" id="nabidka">
+  <div class="wrap">
+    <div class="hlava"><h2>Aktuální nabídka</h2><p>Nabídky nemovitostí aktualizujeme průběžně. Ukázka z toho, co právě prodáváme.</p></div>
+    <ul role="list" class="karty">
+      {% for n in data.nabidka %}
+      <li class="karta {{ 'rez' if n.stav == 'Rezervováno' else '' }}">
+        <div class="hledacek">{{ img(n.foto, n.nazev ~ ', ' ~ n.misto, sizes='(min-width: 60rem) 22rem, 90vw') }}<span class="stav">{{ n.stav }}</span></div>
+        <h3>{{ n.nazev }}</h3>
+        <p class="misto">{{ n.misto }}</p>
+        <p class="cena">{{ n.cena }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="odkazy"><a href="https://www.realityjinak.eu/nabidka-nemovitosti/aktualni">Celá nabídka</a> · <a href="https://www.realityjinak.eu/nabidka-nemovitosti/prodane">Prodané nemovitosti</a></p>
+  </div>
+</section>
+
+<section class="sekce tmava" id="proc">
+  <div class="wrap">
+    <div class="hlava"><h2>Proč se u nás prodává jinak</h2><p>Zajímá nás všechno, co s prodejem souvisí. Předvídáme komplikace a hledáme řešení dřív, než nastanou.</p></div>
+    <ul role="list" class="nastroje">
+      <li><h3>Videoprohlídky</h3><p>Zájemce si nemovitost projde bez návštěvy a vy ušetříte čas na zbytečných schůzkách.</p></li>
+      <li><h3>3D scan</h3><p>Detailní přehled nemovitosti. Zájemce u ní stráví víc času a snáz se rozhodne.</p></li>
+      <li><h3>Homestaging a fotky</h3><p>Podle fotografií se lidé rozhodují, jestli nemovitost vůbec přijdou vidět.</p></li>
+      <li><h3>Půdorysy</h3><p>Zájemce potřebuje vědět, jestli se do nemovitosti „vejde“. Půdorys mu to ukáže.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce" id="postup">
+  <div class="wrap postup-wrap">
+    <div class="hlava"><h2>Jak probíhá prodej</h2><p>Sedm kroků od první schůzky po financování pro kupujícího.</p></div>
+    <ol role="list" class="kroky">
+      {% for k in data.postup %}<li><span class="cislo">{{ k.cislo }}</span><div><h3>{{ k.nazev }}</h3><p>{{ k.popis }}</p></div></li>{% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="sekce svetla" id="sluzby">
+  <div class="wrap">
+    <div class="hlava"><h2>Služby kolem prodeje</h2><p>Prodej má spoustu návazností. Právní, finanční i daňovou část vám pomůžeme zvládnout.</p></div>
+    <ul role="list" class="sluzby">
+      {% for s in data.sluzby %}<li><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce" id="reference">
+  <div class="wrap">
+    <figure class="citat">
+      <blockquote>„S panem Mgr. Ráblem jsem byl opravdu spokojený. Byt se mu povedlo prodat za velmi pěknou cenu a poměrně rychle. Tuto realitku budu doporučovat všude.“</blockquote>
+      <figcaption>Jaroslav Šafka, 16. 7. 2026</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="sekce svetla" id="tym">
+  <div class="wrap">
+    <div class="hlava"><h2>Náš tým</h2><p>Empatičtí obchodníci s léty zkušeností, kteří se dál vzdělávají.</p></div>
+    <ul role="list" class="tym">
+      {% for t in data.tym %}
+      <li>{{ img(t.foto, t.jmeno, sizes='12rem') }}<h3>{{ t.jmeno }}</h3><p class="role">{{ t.role }}</p><p>{{ t.kde }}</p><p><a href="tel:{{ t.tel|replace(' ', '') }}">{{ t.tel }}</a></p></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="sekce tmava" id="kontakt">
+  <div class="wrap kontakt">
+    <div>
+      <h2>Prodáváte? Ozvěte se nám.</h2>
+      <p>Sjednejte si nezávaznou schůzku a projdeme všechny detaily prodeje vaší nemovitosti.</p>
+      <p class="spoj"><a href="tel:{{ site.kontakt.telefon|replace(' ', '') }}">{{ site.kontakt.telefon }}</a><br><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br>{{ site.kontakt.adresa.ulice }}, {{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}

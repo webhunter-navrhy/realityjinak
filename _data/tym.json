@@ -1,0 +1,23 @@
+[
+ {
+  "jmeno": "Mgr. Ivo Rábl",
+  "role": "jednatel",
+  "kde": "Brno, Brno-venkov",
+  "tel": "+420 776 483 448",
+  "foto": "ivo.rabl.jpg"
+ },
+ {
+  "jmeno": "Martin Rábl",
+  "role": "makléř",
+  "kde": "Brno, Brno-venkov",
+  "tel": "+420 603 774 237",
+  "foto": "martin.rabl.jpg"
+ },
+ {
+  "jmeno": "Alena Kubínková",
+  "role": "makléřka",
+  "kde": "Praha, Praha-východ, Středočeský kraj",
+  "tel": "+420 604 265 384",
+  "foto": "alena.kubinkova.jpg"
+ }
+]

@@ -1,0 +1,58 @@
+{
+  "slug": "realityjinak",
+  "nazev": "Reality jinak",
+  "url": "https://webhunter-navrhy.github.io/realityjinak/",
+  "base": "/realityjinak/",
+  "lang": "cs",
+  "popis": "Reality jinak: prodáváme nemovitosti jinak. Videoprohlídky, 3D scan, nacenění, právní a finanční servis. Brno, Praha a celá ČR.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "placeholder.jpg",
+  "logo": "logo.png",
+  "theme_color": "#141e5b",
+  "typ": "RealEstateAgent",
+  "ico": "29295424",
+  "kontakt": {
+    "email": "info@realityjinak.eu",
+    "telefon": "+420 776 483 448",
+    "adresa": {
+      "ulice": "Kubova 1951/4",
+      "psc": "621 00",
+      "mesto": "Brno",
+      "zeme": "CZ"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [
+    "https://www.facebook.com/realityjinak1/",
+    "https://www.youtube.com/channel/UCdyS7AuHamFfD_JxRegpI3w"
+  ],
+  "cenove_rozpeti": "",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Poptávka z webu realityjinak.eu"
+  },
+  "nav": [
+    {
+      "text": "Nabídka",
+      "href": "#nabidka"
+    },
+    {
+      "text": "Jak prodáváme",
+      "href": "#postup"
+    },
+    {
+      "text": "Služby",
+      "href": "#sluzby"
+    },
+    {
+      "text": "Tým",
+      "href": "#tym"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ]
+}

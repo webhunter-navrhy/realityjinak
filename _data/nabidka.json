@@ -1,0 +1,37 @@
+[
+ {
+  "nazev": "Prodej apartmánů 1+kk, 19 m², zahrada, bazén",
+  "misto": "Dolní Dunajovice",
+  "cena": "3 190 000 Kč",
+  "stav": "Aktivní",
+  "foto": "nem1492.jpg"
+ },
+ {
+  "nazev": "Prodej stavebního pozemku pro bydlení, 2 184 m²",
+  "misto": "Letovice – Slatinka",
+  "cena": "2 175 000 Kč",
+  "stav": "Aktivní",
+  "foto": "nem455.jpg"
+ },
+ {
+  "nazev": "Prodej bytu 3+1, 65 m², lodžie, velký sklep",
+  "misto": "Břeclav, ul. Mendlova",
+  "cena": "3 965 000 Kč",
+  "stav": "Rezervováno",
+  "foto": "nem1498.jpg"
+ },
+ {
+  "nazev": "Prodej apartmánů 2+kk, 36 m², zahrada, bazén",
+  "misto": "Dolní Dunajovice",
+  "cena": "4 190 000 Kč",
+  "stav": "Rezervováno",
+  "foto": "nem1495.jpg"
+ },
+ {
+  "nazev": "Prodej rodinného domu 5+kk, 187 m², pozemek 246 m²",
+  "misto": "Dolní Dunajovice",
+  "cena": "5 990 000 Kč",
+  "stav": "Rezervováno",
+  "foto": "nem1491.jpg"
+ }
+]
